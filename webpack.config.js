@@ -47,5 +47,12 @@ module.exports = {
             analyzerMode: "static", //the report outputs to an HTML file in the dist folder
         })
     ],
+    devServer: {
+        static: {
+          directory: path.join(__dirname, './'),
+        },
+        compress: true,
+        port: 8080,
+      },
     mode: 'development'
 };
