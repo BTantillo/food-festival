@@ -14,6 +14,7 @@ const FILES_TO_CACHE = [
     "./dist/tickets.bundle.js",
     "./dist/schedule.bundle.js"
   ];
+  
 
   self.addEventListener('fetch', function (e) {
     console.log('fetch request : ' + e.request.url)
